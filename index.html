@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+	<div id="example">
+		<span>message is {{ message }}</span>
+		<input type="text" v-model="message" placeholder="edit me">
+	</div>
+	
+	<script>
+        new Vue({
+           el:'#example',
+           data:{
+           	   message:''
+           }
+        })
+	</script>
+</body>
+</html>
